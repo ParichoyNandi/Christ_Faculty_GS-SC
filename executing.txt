@@ -1,4 +1,4 @@
-cd C:\Users\parichoy nandi\Documents\GitHub\GSC_SCO
-.venv\Scripts\activate
+cd C:\Users\parichoy nandi\Documents\GitHub\Christ_Faculty_GS-SC>
+venv\Scripts\activate
 pip install -r requirements.txt   
-python app.py
+python app.py 

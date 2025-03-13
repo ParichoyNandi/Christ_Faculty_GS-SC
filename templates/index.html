@@ -7,7 +7,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #b0b0b0; /* Light Gray Background */
+    background-image: url("/static/clogo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
             margin: 0;
             padding: 20px;
             color: #333;
@@ -43,12 +47,14 @@ h2 {
 .container {
     max-width: 1000px;
     margin: auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7); /* White with transparency */
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     padding-top: 60px;
     min-height: 245px;
+    backdrop-filter: blur(10px); /* Adjust blur amount */
+    border-radius: 10px; /* Optional: Adds smooth edges */
 }
         .table-separator {
     border-left: 2px solid #ff6347;
