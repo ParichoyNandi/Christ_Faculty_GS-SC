@@ -1,0 +1,7 @@
+Flask
+beautifulsoup4
+requests
+lxml
+gunicorn  
+ratelimit
+aiohttp
