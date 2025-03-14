@@ -7,15 +7,20 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #b0b0b0; /* Light Gray Background */
+            background-color: #f8f8f8;
     background-image: url("/static/clogo.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
             margin: 0;
             padding: 20px;
-            color: #333;
+            color: #333;  
+            min-height: 90vh;
+    position: relative;
+    padding-bottom: 50px;          
         }
+
+
         .logo {
         position: absolute;
         top: 10px; 
@@ -283,6 +288,29 @@ h2 {
         border-bottom: 1px solid #eee;
     } */
 
+
+    footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    width: 98.7%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.footer-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.name {
+    font-weight: bold;
+}
+
  </style>
 </head>
 <body>
@@ -322,6 +350,7 @@ h2 {
         </div>
     
         <button id="generateButton">Generate Report</button>
+        <hr style="margin: 1px;">
         <div id="table-container">
             <button id="download-btn" onclick="downloadExcel()">Download</button>
         <div id="resultContainer" class="hidden">
@@ -406,6 +435,8 @@ h2 {
     <div id="loadingIndicator" style="display: none; text-align: center; margin-top: 20px;">
         <p>Loading... Please wait</p>
     </div>
+    </div>
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
     <script>
     document.getElementById('generateButton').addEventListener('click', function () {
@@ -662,5 +693,11 @@ function downloadExcel() {
 }
     
     </script>
+    <footer>
+        <div class="footer-container">
+            <p>Ideation by <span class="name">Dr. Ashok Immanuel</span>, guided by <span class="name">Dr. Nisha Varghese</span>, developed & maintained by <span class="name">Sai Darshan</span> and <span class="name">Parichoy Nandi</span>.</p>
+        </div>
+    </footer>
+    
 </body>
 </html>
